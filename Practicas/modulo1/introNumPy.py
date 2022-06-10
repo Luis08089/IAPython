@@ -1,26 +1,26 @@
 import numpy as np
 #Creacion de arrays de valores 0
-#a = np.zeros((2, 4))
+a = np.zeros((2, 4))
 #input(a)
 #input(a.shape)
 #input(a.ndim)
 #input(a.size)
 
 #Creacionde arrays de valores 1
-#b = np.ones((3, 2, 4))
+b = np.ones((3, 2, 4))
 #input(b)
 
 #Creacion de arrays cuyo valor son todos iguales al que se indica
-#c = np.full((2, 3, 4), 8)
+c = np.full((2, 3, 4), 8)
 #input(c)
 
 #El resultado de np.empty no es predecible 
 #Inicializa los valores del array utilizando una lista de Python
-#d = np.empty((2,3,9))
+d = np.empty((2,3,9))
 #input(d)
 
 #Inicializacion del array utilizando una lista de Python
-#e = np.array([[1, 2, 3], [4, 5, 6]])
+e = np.array([[1, 2, 3], [4, 5, 6]])
 #print(e)
 
 #Creación de array utilizando una funcion basada en rangos
@@ -30,16 +30,16 @@ import numpy as np
 #Inicializacion de un array con numeros aleatorios
 #input(np.random.rand(2, 3, 4))
 
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
-#c = np.random.randn(1000000)
-#plt.hist(c, bins=200)
+c = np.random.randn(1000000)
+plt.hist(c, bins=200)
 #plt.show()
 
 # ACCESO A LOS ELEMENTOS DE UN ARRAY
 
 # Creación de un Array unidimensional
-#array_uni = np.array([1, 3, 5, 7, 9, 11])
+array_uni = np.array([1, 3, 5, 7, 9, 11])
 #print(array_uni.shape)
 #print(array_uni)
 
@@ -53,7 +53,7 @@ import numpy as np
 #print(array_uni[0:: 3])
 
 # Creacion de un array multidimencional
-#array_multi = np.array([[1,2,3,4], [5,6,7,8]])
+array_multi = np.array([[1,2,3,4], [5,6,7,8]])
 
 # Accediendo al curto elemento del Array
 #print(array_multi[0, 3])
@@ -67,21 +67,21 @@ import numpy as np
 # MODIFICACION DE UN ARRAY
 
 # Creacin de un array unidimensional inicializado con el rango de elementos 0-27
-#array1 = np.arange(28)
+array1 = np.arange(28)
 #print(array1)
 
 # Cambiar las dimensiones del Array y sus longitudes
-#array1.shape = (7,4)
+array1.shape = (7,4)
 #print(array1)
 
 # El ejemplo anterior devuelve un nuevo Array que apunta a los mismos datos. 
 # Importante: Modificaciones en un Array, modificaran el otro Array
-#array2 = array1.reshape(4, 7)
+array2 = array1.reshape(4, 7)
 #print("Shape:", array2.shape)
 #print("Array 2:\n", array2)
 
 # Modificación del nuevo Array devuelto
-#array2[0, 3] = 20
+array2[0, 3] = 20
 #print("Array 2:\n", array2)
 
 #print("Array 1:\n", array1)
@@ -93,8 +93,8 @@ import numpy as np
 # BROADCASTING
 
 # Creación de dos Arrays unidimensionales
-#array1 = np.arange(5)
-#array2 = np.array([3])
+array1 = np.arange(5)
+array2 = np.array([3])
 #print("Shape Array 1:", array1.shape)
 #print("Array 1:", array1)
 #print()
@@ -102,13 +102,13 @@ import numpy as np
 #print("Array 2:", array2)
 
 # Suma de ambos Arrays
-#array1 + array2
+array1 + array2
 
 # Creación de dos Arrays multidimensional y unidimensional
 
-#array1 = np.arange(6)
-#array1.shape = (2, 3)
-#array2 = np.arange(6, 18, 4)
+array1 = np.arange(6)
+array1.shape = (2, 3)
+array2 = np.arange(6, 18, 4)
 #print("Shape Array 1:", array1.shape)
 #print("Array 1:\n", array1)
 #print()
@@ -116,12 +116,12 @@ import numpy as np
 #print("Array 2:", array2)
 
 # Suma de ambos Arrays
-#array1 + array2
+array1 + array2
 
 #FUNCIONES ESTADISTICAS SOBRE LOS ARRAYS
 
 # Creación de un Array unidimensional
-#array1 = np.arange(1, 20, 2)
+array1 = np.arange(1, 20, 2)
 #print("Array 1:", array1)
 
 # Media de los elementos del Array
